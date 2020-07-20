@@ -1,0 +1,268 @@
+:root {
+    --top-bg-color: #183042;
+    --infobox-bg-color: #0c1829;
+    --mainsection-bg-color: #fff;
+    --font-base-size: 16px;
+    --font-color-a: #fff;
+    --font-color-b: #53aaec;
+    --font-color-c: #0c1829;
+    --font-color-d: #000;
+    --font-color-e: #808080;
+    --font-color-f: #236ca3;
+    --font-family-1: 'Ubuntu', sans-serif;
+    --font-family-2: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family-1);
+}
+
+html {
+    font-size: var(--font-base-size);
+}
+
+#pagewrapper {
+    margin: auto;
+    width: 85.38em;     /**PARA QUE A PROPORÇÃO SEJA DE UM A4*/
+    height: 120.2em;    /**PARA QUE A PROPORÇÃO SEJA DE UM A4*/
+}
+
+/*TOPO: RESUMO + FOTO*/
+#resumo_topo_wrapper {
+    display: flex;
+    align-items: center;
+    color: var(--font-color-a);
+    padding: 2em 2em 1em 2em;
+    background-color: var(--top-bg-color);
+}
+
+#resumo_topo_wrapper h1, h2, p {
+    font-weight: 300;
+}
+
+#resumo_topo_wrapper h2 {
+    color: var(--font-color-b);
+    padding: 0.15em 0 0.2em 0;
+    font-size: 1.2em;
+}
+
+#resumo_topo_wrapper p {
+    line-height: 1.4em;
+    text-align: justify;
+    padding: 1em 0 0 0;
+}
+
+#foto {
+    margin-left: 1.4em;
+}
+
+#foto img {
+    display: block;
+    border-radius: 0.6em;
+}
+/*FIM TOPO: RESUMO + FOTO*/
+
+/*BOX INFOS*/
+#box_infos_parent {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--font-color-a);
+    font-size: 0.9em;
+    padding: 1em 2em;
+    background-color: var(--infobox-bg-color);
+}
+
+.box_infos_child {
+    display: flex;
+    padding: 0.5em;
+    width: 50%;
+}
+
+.box_infos_child > a {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: color 150ms ease-out;
+}
+
+.box_infos_child > a:hover {
+    color: var(--font-color-b);
+}
+
+.info_icon img {
+    display: block;
+}
+
+.info_text {
+    padding-left: 0.5em;
+}
+/*FIM BOX INFOS*/
+
+/*MAIN (GERAIS)*/
+main {
+    background-color: var(--mainsection-bg-color);
+    padding: 1em 2em 0 2em;
+}
+
+main h1 {
+    font-weight: 600;
+    font-size: 1.6em;
+    color: var(--font-color-c);
+    border-bottom: 2px solid var(--font-color-c);
+}
+
+main h2 {
+    font-weight: 600;
+    color: var(--font-color-c);
+    font-size: 1.3em;
+}
+
+main h3 {
+    color: var(--font-color-d);
+    font-weight: 400;
+    font-size: 1.18em;
+}
+
+main h3 em {
+    font-weight: 500;
+    color: var(--font-color-e);
+}
+
+main h4 {
+    color: var(--font-color-f);
+    font-weight: 400;
+    font-size: 1.1em;
+    margin: 0.3em 0;
+}
+
+main h5 {
+    color: var(--font-color-f);
+    font-weight: 400;
+    font-size: 1.1em;
+}
+/*FIM MAIN (GERAIS)*/
+
+/*COLUNA FLEX*/
+.colunas_flex {
+    display: flex;
+}
+
+.colunas_flex .colunas_flex_item {
+    width: 50%;
+}
+
+.colunas_flex .colunas_flex_item .col_flex_content {
+    padding: 0.8em 0;
+}
+
+.colunas_flex .colunas_flex_item:last-child {
+    margin-left: 1.5em;
+    padding-bottom: 0.8em;
+}
+
+.colunas_flex .colunas_flex_item .col_flex_content:last-child  {
+    padding-right: 0.25em;
+}
+/*FIM COLUNA FLEX*/
+
+/*SECOES*/
+.secao .secao_item:last-child {
+    padding-bottom: 1.6em;
+}
+
+.secao_item {
+    padding: 0.8em 0;
+}
+/*FIM SECOES*/
+
+/*LISTAGEM SECOES*/
+.listagem_secao {
+    list-style-type: circle;
+    margin: 0.6em 0;
+    padding-left: 2.5em;
+}
+
+.listagem_secao li {
+    color: var(--font-color-f);
+}
+
+.listagem_secao li p {
+    font-family: var(--font-family-2);
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--font-color-d);
+}
+
+.listagem_secao li p sup {
+    font-size: 0.6em;
+}
+/*FIM LISTAGEM SECOES*/
+
+/*ARTIGO*/
+.artigo {
+    font-weight: 300;
+    color: var(--font-color-d);
+}
+
+.listagem_secao .link_artigo {
+    font-family: var(--font-family-2);
+    font-weight: 400;
+    font-size: 1em;
+    color: var(--font-color-f);
+}
+
+.listagem_secao .link_artigo:hover {
+    color: var(--font-color-c);
+}
+/*FIM ARTIGO*/
+
+/*LISTA TI*/
+#lista_ti {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+#lista_ti li {
+    display: flex;
+    align-items: center;
+    padding: 0.3em;
+    border: 2px solid var(--font-color-c);
+    border-radius: 0.3em;
+    margin-right: 0.6em;
+    margin-bottom: 0.4em;
+}
+
+#lista_ti p {
+    color: var(--font-color-c);
+    font-weight: 500;
+}
+
+#lista_ti li:last-child {
+    margin-right: 0;
+}
+
+#lista_ti .ti_icon {
+    margin-right: 0.4em;
+}
+
+#lista_ti .ti_icon img {
+    display: block;
+}
+
+.secao_item_ti {
+    padding: 1.3em 0;
+}
+/*FIM LISTA TI*/
+
+/*RODAPÉ*/
+/*footer {
+    background-color: var(--top-bg-color);
+    padding: 1em;
+}*/
+/*FIM RODAPÉ*/
