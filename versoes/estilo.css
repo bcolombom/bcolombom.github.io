@@ -49,11 +49,30 @@ html {
     font-size: 1.2em;
 }
 
-#resumo_topo_wrapper p {
+#resumo_topo > p {
     line-height: 1.4em;
     text-align: justify;
     padding: 1em 0 0 0;
 }
+
+/*LISTAGEM RESUMO TOPO*/
+.listagem_resumo_topo {
+    list-style-type: circle;
+    margin: 0.6em 0 0 0;
+    padding-left: 1em;
+}
+
+.listagem_resumo_topo li {
+    padding: 0.15em;
+    font-size: 1em;
+    font-weight: 300;
+    color: var(--font-color-b);
+}
+
+.listagem_resumo_topo p {
+    color: var(--font-color-a);
+}
+/*FIM LISTAGEM RESUMO TOPO*/
 
 #foto {
     margin-left: 1.4em;
