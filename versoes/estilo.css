@@ -275,7 +275,19 @@ main h5 {
 }
 
 .secao_item_ti {
-    padding: 1.3em 0;
+    padding: 1.2em 0;
+}
+
+/*ASTERISCO TI*/
+.secao_item_ti .asterisco {
+    font-family: var(--font-family-2);
+    font-size: 0.9em;
+    font-weight: 400;
+    color: var(--font-color-d);  
+}
+.secao_item_ti .asterisco a {
+    text-decoration: none;
+    color: var(--font-color-f);
 }
 /*FIM LISTA TI*/
 
