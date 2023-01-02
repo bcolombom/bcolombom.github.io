@@ -42,6 +42,7 @@ body {
     padding: 2em 2em 1em 2em;     /*A DEFINIR*/
     background-color: var(--top-bg-color);
     border-radius: 1em 1em 0 0;     /*A DEFINIR*/
+    justify-content: space-between;
 }
 
 #resumo_topo_wrapper h1, h2, p {
@@ -50,14 +51,14 @@ body {
 
 #resumo_topo_wrapper h2 {
     color: var(--font-color-b);
-    padding: 0.15em 0 0.2em 0;
+    padding: 0.15em 0 1em 0;
     font-size: 1.2em;
 }
 
 #resumo_topo_wrapper p {
     line-height: 1.4em;
     text-align: justify;
-    padding: 1em 0 0 0;
+    padding: 0 0 0 0;
 }
 
 #foto {
