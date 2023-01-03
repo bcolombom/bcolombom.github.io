@@ -35,8 +35,9 @@ html {
     display: flex;
     align-items: center;
     color: var(--font-color-a);
-    padding: 2em 2em 1em 2em;
+    padding: 2em 2em 1em 2em;     /*A DEFINIR*/
     background-color: var(--top-bg-color);
+    justify-content: space-between;
 }
 
 #resumo_topo_wrapper h1, h2, p {
@@ -61,7 +62,6 @@ html {
 
 #foto img {
     display: block;
-    border-radius: 0.6em;
 }
 /*FIM TOPO: RESUMO + FOTO*/
 
@@ -145,6 +145,19 @@ main h5 {
     font-weight: 400;
     font-size: 1.1em;
 }
+
+.contact_person {
+    font-family: var(--font-family-2);
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--font-color-f);
+}
+
+.contact_person_span {
+    font-family: var(--font-family-2);
+    color: var(--font-color-d);
+}
+
 /*FIM MAIN (GERAIS)*/
 
 /*COLUNA FLEX*/
