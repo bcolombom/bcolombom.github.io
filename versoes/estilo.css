@@ -164,6 +164,19 @@ main h5 {
     font-weight: 400;
     font-size: 1.1em;
 }
+
+.contact_person {
+    font-family: var(--font-family-2);
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--font-color-f);
+}
+
+.contact_person_span {
+    font-family: var(--font-family-2);
+    color: var(--font-color-d);
+}
+
 /*FIM MAIN (GERAIS)*/
 
 /*COLUNA FLEX*/
